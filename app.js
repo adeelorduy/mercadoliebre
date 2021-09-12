@@ -13,7 +13,7 @@ app.listen(PORT, () => {
     console.log('App listening on port http://localhost:3000/');
 });
 
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/home.html"))
 });
 
